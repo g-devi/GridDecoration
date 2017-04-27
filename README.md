@@ -1,4 +1,37 @@
 # GridDecoration
+AndroidのRecyclerViewでGridLayoutを用いた際に、要素間の余白を調整するItemDecoration。
+
+
+画面左右端の余白と要素間の余白を合わせるのに役立ちます。
+
+全幅のコンテンツも配置できるようになります。  
+
+
+Usage
+-----
+
+#### 通常
+```java
+GridDecoration.set(recyclerView, visibleMargin);
+```
+* visibleMarginで要素間に設定したい余白(px)を渡す
+
+#### 要素のViewGroupに余白(layout_marginなど)が存在する場合
+```java
+GridDecoration.set(recyclerView, visibleMargin, contentMargin);
+```
+* contentMarginで要素に設定した余白(px)を渡す
+* 要素に設定された余白も含めてvisibleMargin分の余白を空けるように調整される
+* CardViewにshadowを設定した場合に余白をもたせた場合など
+
+#### 要素上下と左右の余白を変えたい場合
+```java
+GridDecoration.setVH(RecyclerView recycler,
+            verticalVisibleMargin, horizontalVisibleMargin,
+            verticalContentMargin, horizontalContentMargin);
+```
+* 上下(vertical)と左右(horizontal)に設定したい余白と、コンテンツの余白を設定する
+
 
 
 License
