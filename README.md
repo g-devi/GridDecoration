@@ -22,7 +22,6 @@ GridDecoration.set(recyclerView, visibleMargin, contentMargin);
 ```
 * contentMarginで要素に設定した余白(px)を渡す
 * 要素に設定された余白も含めてvisibleMargin分の余白を空けるように調整される
-* CardViewにshadowを設定した場合に余白をもたせた場合など
 
 #### 要素上下と左右の余白を変えたい場合
 ```java
