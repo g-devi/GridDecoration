@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 25
@@ -9,6 +10,15 @@ android {
         versionCode 1
         versionName "1.0.0"
     }
+}
+
+publish {
+    userOrg = 'g-devi'
+    groupId = 'com.github.g_devi'
+    artifactId = 'griddecoration'
+    publishVersion = '1.0.0'
+    desc = 'Adjust margins for RecyclerView GriLayout'
+    website = 'https://github.com/g-devi/GridDecoration'
 }
 
 dependencies {
