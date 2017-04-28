@@ -36,8 +36,10 @@ GridDecoration.setVH(RecyclerView recycler,
 Download
 --------
 
+coming soon
+
 ```groovy
-compile 'com.github.g_devi:griddecoration:1.0.0'
+// compile 'com.github.g_devi:griddecoration:1.0.0'
 ```
 
 
